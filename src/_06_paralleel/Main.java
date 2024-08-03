@@ -11,13 +11,13 @@ public class Main {
         );
 
         list.stream()
-                .filter(it -> it.length() ==3)
+                .filter(it -> it.length() == 3)
                 .forEach(it -> System.out.print(it + " "));
 
         System.out.println();
 
         list.parallelStream()
-                .filter(it -> it.length() ==3)
+                .filter(it -> it.length() == 3)
                 .forEach(it -> System.out.print(it + " "));
     }
 }

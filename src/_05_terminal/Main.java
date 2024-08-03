@@ -9,12 +9,15 @@ import java.util.stream.Stream;
 public class Main {
     public static void main(String[] args) {
         Stream<Integer> numbers = Stream.of(1, 2, 3, 4, 5, 6);
-        Optional<Integer> result = numbers.reduce((x, y) -> x + y);  /////можно умножить или  другие дейсвия
+        Optional<Integer> result = numbers.reduce((x, y) -> x + y);  /////−− −−− •••− −• −−− ••− −− −• −−− •••− •• − −••− •• •−•• •• −•• •−• ••− −−• •• • −•• • •−−− ••• − •−− •• •−•−
+
+
         System.out.println("Result:" + result.get());
 
 
         Stream<Integer> numbers1 = Stream.of(-4, -3, -2, 2, 3, 4);
-        int identity = 1;                                              ///// можно написать 0
+        int identity = 1;                                              ///// −− −−− •••− −• −−− −• •− •−−• •• ••• •− − −••− −• −−− •−•• −••−
+
         Integer result1 = numbers1.reduce(identity, (x, y) -> x * y);
         System.out.println("Result:" + result1);
 
@@ -47,15 +50,15 @@ public class Main {
                 .reduce(0, Integer::sum);
         System.out.println("Amount = " + integer);
 
+        /////−• −−− •−− •− −−− • ••− ••• •−•• −−− •−− •• • •−−• •−• • •−− •−• −−− −−•− •− • −− •−− −•− −−− •−•• • −•− −•−• •• ••−−
 
-        /////------------НОВАОЕ УСЛОВИЕ ПРЕВРОЩАЕМ В КОЛЕКЦИЮ--------------------------/////
 
         cats.stream()
                 .filter(it -> it.getAge() < 3)
                 .collect(Collectors.toList())
                 .forEach(System.out::println);
 
-        //////-------------------------------/////
+        System.out.println("---------------");
 
 
         System.out.println("-------------------------------");
@@ -65,24 +68,10 @@ public class Main {
                 .forEach((k, v) -> System.out.println(k + "- + v"));
 
 
-        /////----------------------------------//////
+        /////----------------------------------
 
 
         LinkedList<PricedCar> collect = new LinkedList<>(cats);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }
