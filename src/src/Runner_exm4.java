@@ -2,7 +2,6 @@ package src;
 
 import java.util.Arrays;
 import java.util.List;
-
 public class Runner_exm4 {
     public static void main(String[] args) {
         List<String> list1 = Arrays.asList("java", "C#", "javaScript", "PHP");
