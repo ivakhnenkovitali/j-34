@@ -7,13 +7,9 @@ import java.util.stream.Stream;
 public class Runner_exm3 {
     public static void main(String[] args) {
         List<String> list1 = Arrays.asList("java", "C#", "javaScript", "PHP");
-
         ////использование интерфейса Stream В Java 8
-
         Stream<String> stream1 = list1.stream();
-
         stream1.forEach(item -> System.out.println(item));
-
         /// объект  stream может быть использован единожды для совершения новых действий над объектоми колекции
         ////через стримы нужно будет создовать новый объект stream
 
