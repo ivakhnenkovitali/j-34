@@ -14,15 +14,12 @@ import java.util.stream.Collector;
 ////    new Person("Alex", 29)
 
 ///  );
-///
-
  ////  Map<String,List<Person>> map = new HashMap<>();
   /// for (Person person : personList){
   ///     List<Person> personList=
     ///           map.getOrDefault(person.getName(), new ArrayList<>());
      ///  personList.add(person);
      ////  map.put(person.getName(), valueList);
-
 
 ////}
    ////for (Map.Entry<String, List<Person>> entry : map.entrySet()){
