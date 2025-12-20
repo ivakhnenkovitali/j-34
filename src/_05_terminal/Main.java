@@ -43,7 +43,6 @@ public class Main {
                         }, (x, y) -> x + y);
 
         System.out.println("Amount = + amount");
-
         int integer = cats.stream()
                 .filter(it -> it.getAge() < 3)
                 .map(PricedCar::getPrice)
