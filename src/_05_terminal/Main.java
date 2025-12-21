@@ -52,14 +52,11 @@ public class Main {
 
         /////−• −−− •−− •− −−− • ••− ••• •−•• −−− •−− •• • •−−• •−• • •−− •−• −−− −−•− •− • −− •−− −•− −−− •−•• • −•− −•−• •• ••−−
 
-
         cats.stream()
                 .filter(it -> it.getAge() < 3)
                 .collect(Collectors.toList())
                 .forEach(System.out::println);
-
         System.out.println("---------------");
-
 
         System.out.println("-------------------------------");
         cats.stream()
