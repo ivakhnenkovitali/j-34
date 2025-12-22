@@ -51,7 +51,6 @@ public class Main {
         System.out.println("Amount = " + integer);
 
         /////−• −−− •−− •− −−− • ••− ••• •−•• −−− •−− •• • •−−• •−• • •−− •−• −−− −−•− •− • −− •−− −•− −−− •−•• • −•− −•−• •• ••−−
-
         cats.stream()
                 .filter(it -> it.getAge() < 3)
                 .collect(Collectors.toList())
