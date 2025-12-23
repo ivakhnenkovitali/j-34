@@ -49,7 +49,6 @@ public class Main {
                 .map(PricedCar::getPrice)
                 .reduce(0, Integer::sum);
         System.out.println("Amount = " + integer);
-
         /////−• −−− •−− •− −−− • ••− ••• •−•• −−− •−− •• • •−−• •−• • •−− •−• −−− −−•− •− • −− •−− −•− −−− •−•• • −•− −•−• •• ••−−
         cats.stream()
                 .filter(it -> it.getAge() < 3)
