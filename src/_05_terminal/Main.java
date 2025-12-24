@@ -86,7 +86,6 @@ public class Main {
             this.age = age;
             this.price = price;
         }
-
         public String getName() {
             return name;
         }
