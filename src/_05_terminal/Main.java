@@ -67,13 +67,7 @@ public class Main {
                 .collect(Collectors.toMap(k -> k.getName(), v -> v))
                 .forEach((k, v) -> System.out.println(k + "- + v"));
 
-
-        /////----------------------------------
-
-
         LinkedList<PricedCar> collect = new LinkedList<>(cats);
-
-
     }
 
     private static class PricedCar {
